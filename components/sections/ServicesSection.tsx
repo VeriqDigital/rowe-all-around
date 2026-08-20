@@ -37,15 +37,15 @@ const ServicesSection = ({ showAll = false }: ServicesSectionProps) => (
             className={`${gridClass} group grid border-b border-r border-(--border) bg-white ${
               isFeatured
                 ? "grid-rows-[18rem_1fr] sm:grid-rows-[22rem_1fr]"
-                : "grid-rows-[14rem_1fr]"
+                : "grid-rows-[18rem_1fr]"
             }`}
           >
-            <div className="relative overflow-hidden bg-[#d9d8cf]">
+            <div className={`relative overflow-hidden ${service.frameClass}`}>
               <Image
                 src={service.image}
                 alt={service.alt}
                 fill
-                className={`${service.positionClass} object-cover transition duration-700 group-hover:scale-[1.025]`}
+                className={`${service.fitClass} ${service.positionClass} transition duration-700 group-hover:scale-[1.025]`}
                 sizes={
                   isFeatured
                     ? "(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 58vw"
