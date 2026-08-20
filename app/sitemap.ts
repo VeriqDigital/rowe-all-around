@@ -2,6 +2,10 @@ import type { MetadataRoute } from "next";
 import { siteConfig } from "@/config/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  if (!siteConfig.isApprovedForProduction) {
+    return [];
+  }
+
   return [
     { url: siteConfig.url, changeFrequency: "monthly", priority: 1 },
     { url: `${siteConfig.url}/services`, changeFrequency: "monthly", priority: 0.8 },
