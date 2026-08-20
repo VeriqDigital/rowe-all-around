@@ -21,11 +21,11 @@ const robotoCondensed = Roboto_Condensed({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: "Rowe All Around LLC | Lawn Care & Property Maintenance in Port Charlotte, FL",
+    default: "Rowe All Around LLC | Outdoor & Property Services in Port Charlotte, FL",
     template: `%s | Rowe All Around LLC`,
   },
   description:
-    "Lawn maintenance, landscaping, tree trimming, hurricane cleanup, and property cleanup in Port Charlotte, Florida. Contact Rowe All Around LLC to request an estimate.",
+    "Lawn, landscaping, tree, cleanup, hauling, and property services in Port Charlotte, Florida. Contact Rowe All Around LLC to request an estimate.",
   alternates: { canonical: "/" },
   robots: {
     index: siteConfig.isApprovedForProduction,
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Rowe All Around LLC | Lawn Care & Property Maintenance in Port Charlotte, FL",
+    title: "Rowe All Around LLC | Outdoor & Property Services in Port Charlotte, FL",
     description:
-      "Lawn maintenance, landscaping, tree trimming, hurricane cleanup, and property cleanup in Port Charlotte, Florida.",
+      "Lawn, landscaping, tree, cleanup, hauling, and property services in Port Charlotte, Florida.",
     siteName: "Rowe All Around LLC",
     locale: siteConfig.locale,
     type: "website",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Rowe All Around LLC",
     description:
-      "Lawn care and property maintenance in Port Charlotte, Florida.",
+      "Outdoor and property services in Port Charlotte, Florida.",
     images: ["/og.png"],
   },
 };

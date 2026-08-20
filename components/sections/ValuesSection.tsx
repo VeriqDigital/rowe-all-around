@@ -12,7 +12,7 @@ const values = [
   {
     number: "03",
     title: "Multiple services",
-    description: "Handle routine maintenance, landscaping, trimming, and cleanup with one company.",
+    description: "Handle lawn, landscaping, tree, cleanup, hauling, and property work with one company.",
   },
   {
     number: "04",

@@ -1,6 +1,6 @@
 const trustItems = [
-  ["01", "Licensed & insured", "Professional lawn care and property maintenance for your outdoor space."],
-  ["02", "Property-wide service", "Routine care, landscaping, trimming, storm cleanup, and more from one company."],
+  ["01", "Licensed & insured", "Professional outdoor and property services shaped around the work you need."],
+  ["02", "Property-wide service", "Lawn, tree, cleanup, hauling, and more from one company."],
   ["03", "Free estimates", "Tell Rowe what your property needs and get the conversation started."],
   ["04", "Local service", "Serving property owners in Port Charlotte and surrounding areas."],
 ] as const;

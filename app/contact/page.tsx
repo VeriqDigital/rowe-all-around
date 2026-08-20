@@ -6,7 +6,7 @@ import Section from "@/components/ui/Section";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Call or email Rowe All Around LLC to request an estimate for lawn care or property maintenance in Port Charlotte, Florida.",
+  description: "Call or email Rowe All Around LLC to request an estimate for outdoor, cleanup, hauling, or property services in Port Charlotte, Florida.",
   alternates: { canonical: "/contact" },
 };
 

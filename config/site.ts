@@ -5,7 +5,7 @@ export const siteConfig = {
   shortName: "Rowe All Around",
   isApprovedForProduction: false,
   description:
-    "Lawn care and property maintenance for Port Charlotte homes and properties.",
+    "Lawn, landscaping, tree, cleanup, hauling, and property services for Port Charlotte homes and properties.",
   locale: "en_US",
   url: "https://roweallaround.org",
   location: "Port Charlotte, FL",

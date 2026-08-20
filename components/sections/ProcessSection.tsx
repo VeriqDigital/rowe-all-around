@@ -1,5 +1,5 @@
 const steps = [
-  ["01", "Tell us what you need", "Call or request an estimate and explain the lawn, landscaping, trimming, or cleanup work you need done."],
+  ["01", "Tell us what you need", "Call or request an estimate and explain the lawn, tree, cleanup, hauling, or property work you need done."],
   ["02", "Get a clear plan", "Rowe reviews the property and service needs, then discusses the scope with you."],
   ["03", "Get it taken care of", "Schedule the work and let Rowe handle the property."],
 ] as const;

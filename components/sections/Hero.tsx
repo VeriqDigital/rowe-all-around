@@ -33,9 +33,9 @@ const Hero = () => {
             <span className="mt-2 block text-[#a9e466]">Done right.</span>
           </h1>
           <p className="mt-7 max-w-xl text-lg leading-8 text-white/80 sm:text-xl">
-            Lawn maintenance, landscaping, tree trimming, hurricane cleanup,
-            and property cleanup for homes and properties throughout Port
-            Charlotte and surrounding areas.
+            Lawn and landscape care, tree services, storm cleanup, hauling, and
+            other property services throughout Port Charlotte and surrounding
+            areas.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Button onClick={() => modal.openModal(primaryCta.modal)}>

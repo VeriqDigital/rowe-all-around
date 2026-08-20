@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Button from "@/components/ui/Button";
-import { services } from "@/data/services";
+import { featuredServices } from "@/data/services";
 
 type ServicesSectionProps = { showAll?: boolean };
 
@@ -9,20 +9,20 @@ const ServicesSection = ({ showAll = false }: ServicesSectionProps) => (
     <div className="grid gap-6 lg:grid-cols-[0.75fr_1.25fr] lg:items-end">
       <div>
         <p className="text-xs font-bold uppercase tracking-[0.24em] text-(--accent)">
-          Lawn care &amp; property maintenance
+          Outdoor &amp; property services
         </p>
         <h2 className="mt-4 font-heading text-5xl font-bold uppercase leading-[0.9] tracking-[-0.03em] sm:text-6xl lg:text-7xl">
           One call. The whole property.
         </h2>
       </div>
       <p className="max-w-2xl text-lg leading-8 text-(--muted) lg:justify-self-end">
-        Rowe handles recurring lawn care alongside larger landscaping, trimming,
-        storm cleanup, and property cleanup needs.
+        Rowe All Around handles a broad mix of lawn, landscaping, tree, cleanup,
+        hauling, and property services through one company.
       </p>
     </div>
 
     <div className="mt-12 grid border-l border-t border-(--border) md:grid-cols-2 xl:grid-cols-12">
-      {services.map((service, index) => {
+      {featuredServices.map((service, index) => {
         const isFeatured = index < 2;
         const gridClass =
           index === 0

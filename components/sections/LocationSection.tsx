@@ -12,7 +12,7 @@ const LocationSection = () => (
     <div className="p-7 sm:p-10 lg:p-14">
       <p className="text-xs font-bold uppercase tracking-[0.24em] text-(--accent)">Request an estimate</p>
       <h2 className="mt-4 font-heading text-5xl font-bold uppercase leading-[0.9] sm:text-6xl">Need help with your property?</h2>
-      <p className="mt-6 max-w-lg text-lg leading-8 text-(--muted)">Tell Rowe what needs attention—from recurring lawn care to landscaping, trimming, storm cleanup, or a larger outdoor property cleanup.</p>
+      <p className="mt-6 max-w-lg text-lg leading-8 text-(--muted)">Tell Rowe what needs attention—from lawn and landscape care to tree work, storm cleanup, hauling, or another property project.</p>
       <div className="mt-9 border-t border-(--border)">
         {channels.map((channel) => (
           <a key={channel.label} href={channel.href} className="group grid gap-1 border-b border-(--border) py-5">

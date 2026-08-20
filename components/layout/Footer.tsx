@@ -29,7 +29,7 @@ const Footer = () => (
         </div>
         <div>
           <h2 className="font-heading text-lg font-bold uppercase">Port Charlotte</h2>
-          <p className="mt-5 text-sm leading-6 text-white/62">Lawn care, landscaping, trimming, and cleanup for properties in Port Charlotte and surrounding areas.</p>
+          <p className="mt-5 text-sm leading-6 text-white/62">Lawn, landscaping, tree, cleanup, hauling, and property services in Port Charlotte and surrounding areas.</p>
           <p className="mt-7 font-heading text-lg font-bold uppercase">One call. The whole property.</p>
         </div>
       </div>

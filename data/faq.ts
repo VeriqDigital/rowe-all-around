@@ -2,7 +2,7 @@ export const faqs = [
   {
     question: "What services does Rowe All Around provide?",
     answer:
-      "Rowe All Around provides lawn maintenance, landscaping, tree trimming, hurricane cleanups, and outdoor property cleanups.",
+      "Rowe provides lawn and landscape care, tree services, property and land cleanup, storm preparation, hauling, transport, moving, demolition, and other property-related services. Contact Rowe if you have a project that isn't specifically listed.",
   },
   {
     question: "What area do you serve?",
@@ -10,9 +10,9 @@ export const faqs = [
       "Rowe All Around serves Port Charlotte, Florida, and surrounding areas.",
   },
   {
-    question: "Do you handle hurricane cleanup?",
+    question: "Do you help with storm preparation?",
     answer:
-      "Yes. Hurricane cleanup is one of Rowe All Around's listed services. Contact the team to discuss the outdoor cleanup your property needs.",
+      "Yes. Rowe All Around promotes storm preparation for outdoor properties. Contact the team to discuss the preparation work your property needs.",
   },
   {
     question: "Can I request multiple services at once?",
