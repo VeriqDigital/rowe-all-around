@@ -34,8 +34,11 @@ const Footer = () => (
         </div>
       </div>
       <div className="mt-14 grid gap-4 border-t border-white/13 pt-6 text-xs leading-5 text-white/42 sm:grid-cols-[1fr_auto]">
-        <div><p>Rowe All Around LLC · Port Charlotte, FL</p><p className="mt-1">© 2026 Rowe All Around LLC.</p></div>
-        <p>Website by <a href="https://www.veriqdigital.com/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-3 hover:text-white">Veriq Digital</a></p>
+        <div>
+          <p>Website concept prepared for Rowe All Around LLC. Estimate form submissions are not currently delivered.</p>
+          <p className="mt-1">Rowe All Around LLC &middot; Port Charlotte, FL &middot; &copy; 2026</p>
+        </div>
+        <p>Website by <a href="https://www.veriqdigital.com/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-3 hover:text-white">Veriq</a></p>
       </div>
     </div>
   </footer>

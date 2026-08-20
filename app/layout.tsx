@@ -28,11 +28,11 @@ export const metadata: Metadata = {
     "Lawn maintenance, landscaping, tree trimming, hurricane cleanup, and property cleanup in Port Charlotte, Florida. Contact Rowe All Around LLC to request an estimate.",
   alternates: { canonical: "/" },
   robots: {
-    index: true,
-    follow: true,
+    index: siteConfig.isApprovedForProduction,
+    follow: siteConfig.isApprovedForProduction,
     googleBot: {
-      index: true,
-      follow: true,
+      index: siteConfig.isApprovedForProduction,
+      follow: siteConfig.isApprovedForProduction,
       "max-image-preview": "large",
       "max-snippet": -1,
       "max-video-preview": -1,

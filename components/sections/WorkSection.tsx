@@ -6,7 +6,7 @@ const gallery = [
     alt: "Before and after view of a palm tree trimmed by Rowe All Around",
     label: "Tree Trimming",
     className: "md:col-span-8 md:row-span-2",
-    position: "center 50%",
+    positionClass: "object-[center_48%] md:object-[center_50%]",
     sizes: "(max-width: 768px) 100vw, 66vw",
   },
   {
@@ -14,7 +14,7 @@ const gallery = [
     alt: "Before and after view of shaped trees and hedges",
     label: "Tree & Vegetation Cleanup",
     className: "md:col-span-4",
-    position: "center 50%",
+    positionClass: "object-[center_48%] md:object-center",
     sizes: "(max-width: 768px) 100vw, 33vw",
   },
   {
@@ -22,7 +22,7 @@ const gallery = [
     alt: "Maintained lawn and new palm landscaping beside a lake",
     label: "Lawn Maintenance",
     className: "md:col-span-4",
-    position: "center 57%",
+    positionClass: "object-[center_54%] md:object-[center_57%]",
     sizes: "(max-width: 768px) 100vw, 33vw",
   },
   {
@@ -30,7 +30,7 @@ const gallery = [
     alt: "Rowe All Around team member working in a fresh mulch bed",
     label: "Landscaping",
     className: "md:col-span-5",
-    position: "center 46%",
+    positionClass: "object-[center_27%] md:object-[center_28%]",
     sizes: "(max-width: 768px) 100vw, 42vw",
   },
   {
@@ -38,7 +38,7 @@ const gallery = [
     alt: "Lawn and property maintenance equipment at a work site",
     label: "Property Cleanup",
     className: "md:col-span-7",
-    position: "center 58%",
+    positionClass: "object-[58%_54%] md:object-[60%_55%]",
     sizes: "(max-width: 768px) 100vw, 58vw",
   },
 ] as const;
@@ -55,7 +55,7 @@ const WorkSection = () => (
     <div className="mt-12 grid auto-rows-[18rem] gap-3 sm:auto-rows-[22rem] md:grid-cols-12">
       {gallery.map((item) => (
         <figure key={item.src} className={`group relative overflow-hidden bg-[#243024] ${item.className}`}>
-          <Image src={item.src} alt={item.alt} fill className="object-cover transition duration-700 group-hover:scale-[1.02]" style={{ objectPosition: item.position }} sizes={item.sizes} />
+          <Image src={item.src} alt={item.alt} fill className={`${item.positionClass} object-cover transition duration-700 group-hover:scale-[1.02]`} sizes={item.sizes} />
           <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/85 to-transparent px-5 pb-5 pt-14 font-heading text-lg font-bold uppercase tracking-[0.06em] text-white">{item.label}</figcaption>
         </figure>
       ))}

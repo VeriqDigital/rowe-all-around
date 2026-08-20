@@ -23,11 +23,11 @@ const Navbar = () => {
 
   return (
     <header className="sticky inset-x-0 top-0 z-50 border-b border-white/10 bg-[#151915] text-white shadow-[0_10px_30px_rgba(0,0,0,0.22)]">
-      <div className="mx-auto flex h-18 w-full max-w-(--container-width) items-center gap-3 px-5 sm:h-20 sm:gap-5 sm:px-7 lg:px-10">
+      <div className="mx-auto flex h-20 w-full max-w-(--container-width) items-center gap-3 px-5 sm:h-22 sm:gap-5 sm:px-7 lg:px-10">
         <Link
           href="/"
           aria-label="Rowe All Around home"
-          className="relative size-14 shrink-0 overflow-hidden rounded-full bg-white sm:size-16"
+          className="relative size-17 shrink-0 overflow-hidden rounded-full bg-white shadow-[0_0_0_1px_rgba(255,255,255,0.16)] sm:size-20"
           onClick={() => setIsMenuOpen(false)}
         >
           <Image
@@ -35,7 +35,7 @@ const Navbar = () => {
             alt="Rowe All Around lawn care and property maintenance"
             fill
             className="object-cover"
-            sizes="64px"
+            sizes="(max-width: 639px) 68px, 80px"
           />
         </Link>
 

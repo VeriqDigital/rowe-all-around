@@ -23,7 +23,7 @@ export default function AboutPage() {
             <p className="mt-7 text-lg leading-8 text-white/68">Rowe All Around brings recurring lawn maintenance, landscaping, tree trimming, hurricane cleanup, and property cleanup together for homes and properties in the Port Charlotte area.</p>
           </div>
         </Container>
-        <div className="relative min-h-[450px] lg:min-h-[720px]"><Image src="/774651316_122111181951368675_4272367211822068736_n.jpg" alt="Rowe All Around team member working in a landscaped planting bed" fill className="object-cover object-[center_46%]" sizes="(max-width: 1024px) 100vw, 50vw" /></div>
+        <div className="relative min-h-[450px] lg:min-h-[720px]"><Image src="/774651316_122111181951368675_4272367211822068736_n.jpg" alt="Rowe All Around team member working in a landscaped planting bed" fill className="object-cover object-[62%_38%] sm:object-[60%_40%] lg:object-[58%_43%]" sizes="(max-width: 1024px) 100vw, 50vw" /></div>
       </section>
       <Section><WhyRoweSection /></Section>
       <Section><ProcessSection /></Section>

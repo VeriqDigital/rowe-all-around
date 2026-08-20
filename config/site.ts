@@ -3,6 +3,7 @@ import type { ModalType } from "@/components/layout/LeadModal";
 export const siteConfig = {
   name: "Rowe All Around LLC",
   shortName: "Rowe All Around",
+  isApprovedForProduction: false,
   description:
     "Lawn care and property maintenance for Port Charlotte homes and properties.",
   locale: "en_US",

@@ -27,7 +27,7 @@ const LocationSection = () => (
       </div>
     </div>
     <div className="relative min-h-[420px] bg-[#202620] sm:min-h-[520px] lg:min-h-[720px]">
-      <Image src={contactImage} alt="Rowe All Around team member trimming shrubs at a landscaped property" fill className="object-cover" style={{ objectPosition: "center 43%" }} sizes="(max-width: 1024px) 100vw, 55vw" placeholder="blur" />
+      <Image src={contactImage} alt="Rowe All Around team member trimming shrubs at a landscaped property" fill className="object-cover object-[center_36%] sm:object-[center_39%] lg:object-[center_41%]" sizes="(max-width: 1024px) 100vw, 55vw" placeholder="blur" />
     </div>
   </div>
 );

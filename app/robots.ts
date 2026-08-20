@@ -1,12 +1,22 @@
 import type { MetadataRoute } from "next";
+import { siteConfig } from "@/config/site";
 
 export default function robots(): MetadataRoute.Robots {
+  if (!siteConfig.isApprovedForProduction) {
+    return {
+      rules: {
+        userAgent: "*",
+        disallow: "/",
+      },
+    };
+  }
+
   return {
     rules: {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://roweallaround.org/sitemap.xml",
-    host: "https://roweallaround.org",
+    sitemap: `${siteConfig.url}/sitemap.xml`,
+    host: siteConfig.url,
   };
 }

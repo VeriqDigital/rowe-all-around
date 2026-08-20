@@ -45,8 +45,7 @@ const ServicesSection = ({ showAll = false }: ServicesSectionProps) => (
                 src={service.image}
                 alt={service.alt}
                 fill
-                className="object-cover transition duration-700 group-hover:scale-[1.025]"
-                style={{ objectPosition: service.position }}
+                className={`${service.positionClass} object-cover transition duration-700 group-hover:scale-[1.025]`}
                 sizes={
                   isFeatured
                     ? "(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 58vw"

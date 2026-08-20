@@ -11,7 +11,7 @@ const reasons = [
 const WhyRoweSection = () => (
   <div className="grid overflow-hidden border border-(--border) bg-white lg:grid-cols-2">
     <div className="relative min-h-[420px] lg:min-h-[760px]">
-      <Image src={whyRoweImage} alt="Rowe All Around team member caring for a residential lawn" fill className="object-cover" style={{ objectPosition: "center 52%" }} sizes="(max-width: 1024px) 100vw, 50vw" placeholder="blur" />
+      <Image src={whyRoweImage} alt="Rowe All Around team member caring for a residential lawn" fill className="object-cover object-[center_43%] sm:object-[center_46%] lg:object-[center_48%]" sizes="(max-width: 1024px) 100vw, 50vw" placeholder="blur" />
     </div>
     <div className="bg-[#111811] p-7 text-white sm:p-10 lg:p-14">
       <p className="text-xs font-bold uppercase tracking-[0.24em] text-[#a9e466]">Why Rowe All Around</p>

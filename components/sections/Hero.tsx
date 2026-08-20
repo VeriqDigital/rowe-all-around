@@ -16,12 +16,12 @@ const Hero = () => {
         src="/774895344_122111181963368675_6034236934525468951_n.jpg"
         alt="Maintained lawn and landscaping beside a Port Charlotte lake"
         fill
-        className="-z-20 object-cover object-[58%_center] lg:object-[center_56%]"
+        className="-z-20 object-cover object-[58%_54%] sm:object-[60%_55%] lg:object-[62%_56%]"
         sizes="100vw"
         preload
         quality={100}
       />
-      <div className="absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgba(7,14,8,.96)_0%,rgba(7,14,8,.79)_45%,rgba(7,14,8,.24)_78%),linear-gradient(0deg,rgba(7,14,8,.78)_0%,transparent_48%)]" />
+      <div className="absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgba(7,14,8,.94)_0%,rgba(7,14,8,.69)_45%,rgba(7,14,8,.1)_80%),linear-gradient(0deg,rgba(7,14,8,.58)_0%,transparent_46%)]" />
       <Container className="flex min-h-[650px] items-center py-16 sm:min-h-[690px] lg:min-h-[calc(100svh-5.5rem)] lg:py-20">
         <div className="max-w-3xl">
           <div className="mb-6 flex items-center gap-3 text-xs font-bold uppercase tracking-[0.22em] text-[#a6ce96] sm:text-sm">
