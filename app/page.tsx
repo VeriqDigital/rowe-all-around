@@ -4,9 +4,9 @@ import LocationSection from "@/components/sections/LocationSection";
 import ServicesSection from "@/components/sections/ServicesSection";
 import ContactCtaSection from "@/components/sections/ContactCtaSection";
 import ProcessSection from "@/components/sections/ProcessSection";
-import ReviewsSection from "@/components/sections/ReviewsSection";
+import ValuesSection from "@/components/sections/ValuesSection";
 import TrustStrip from "@/components/sections/TrustStrip";
-import WhyPrecisionSection from "@/components/sections/WhyPrecisionSection";
+import WhyRoweSection from "@/components/sections/WhyRoweSection";
 import WorkSection from "@/components/sections/WorkSection";
 import Container from "@/components/ui/Container";
 import Section from "@/components/ui/Section";
@@ -16,10 +16,10 @@ export default function Home() {
     <main>
       <Hero />
       <TrustStrip />
-      <Section className="py-14 md:py-18"><ReviewsSection /></Section>
+      <Section className="py-14 md:py-18"><ValuesSection /></Section>
       <Section id="services"><ServicesSection /></Section>
-      <section id="work" className="scroll-mt-28 border-t border-black bg-[#171b18] py-16 md:py-24"><Container><WorkSection /></Container></section>
-      <Section id="why-precision"><WhyPrecisionSection /></Section>
+      <section id="work" className="scroll-mt-28 border-t border-black bg-[#111811] py-16 md:py-24"><Container><WorkSection /></Container></section>
+      <Section id="about"><WhyRoweSection /></Section>
       <Section><ProcessSection /></Section>
       <Section id="contact"><LocationSection /></Section>
       <Section id="faq"><FAQ /></Section>

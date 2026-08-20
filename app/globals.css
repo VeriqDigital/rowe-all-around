@@ -9,8 +9,8 @@
   --muted: #64655f;
   --primary: #171b18;
   --primary-hover: #2b302c;
-  --accent: #2d681e;
-  --accent-hover: #1f4f14;
+  --accent: #3b7b20;
+  --accent-hover: #2a5f14;
   --border: #cec9bc;
   --container-width: 1320px;
   --radius-sm: 6px;
@@ -35,6 +35,7 @@ html {
 
 body {
   min-height: 100vh;
+  overflow-x: clip;
   background-color: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans);

@@ -1,24 +1,19 @@
 import type { ModalType } from "@/components/layout/LeadModal";
 
 export const siteConfig = {
-  name: "Precision Land Clearing",
-  shortName: "Precision",
-  owner: "Elias Rosales",
+  name: "Rowe All Around LLC",
+  shortName: "Rowe All Around",
   description:
-    "Land clearing and property preparation with direct communication from first conversation to finished work.",
+    "Lawn care and property maintenance for Port Charlotte homes and properties.",
   locale: "en_US",
+  url: "https://roweallaround.org",
+  location: "Port Charlotte, FL",
+  postalCode: "33980",
   contact: {
-    phone: "515-686-7761",
-    phoneHref: "tel:+15156867761",
-    smsHref: "sms:+15156867761",
-    email: "contact@precisionlandclearing.co",
-    emailHref: "mailto:contact@precisionlandclearing.co",
-  },
-  social: {
-    instagram: "https://www.instagram.com/precision_landclearing",
-    facebook:
-      "https://www.facebook.com/p/Precision-Land-Clearing-61566959926993/",
-    tiktok: "https://www.tiktok.com/@precisionlandclearing",
+    phone: "(941) 317-0509",
+    phoneHref: "tel:+19413170509",
+    email: "roweallaround@gmail.com",
+    emailHref: "mailto:roweallaround@gmail.com",
   },
 } as const;
 
@@ -27,9 +22,10 @@ export type NavItem =
   | { label: string; modal: ModalType };
 
 export const navigation: NavItem[] = [
+  { label: "Home", href: "/" },
   { label: "Services", href: "/#services" },
   { label: "Our Work", href: "/#work" },
-  { label: "Why Precision", href: "/#why-precision" },
+  { label: "About", href: "/about" },
   { label: "FAQ", href: "/#faq" },
   { label: "Contact", href: "/contact" },
 ];

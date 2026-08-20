@@ -1,37 +1,27 @@
 export const faqs = [
   {
-    question: "What types of properties do you work on?",
+    question: "What services does Rowe All Around provide?",
     answer:
-      "Every property and scope is different. Send Elias the property location, photos, and a short description so he can discuss whether the project is a fit.",
+      "Rowe All Around provides lawn maintenance, landscaping, tree trimming, hurricane cleanups, and outdoor property cleanups.",
+  },
+  {
+    question: "What area do you serve?",
+    answer:
+      "Rowe All Around serves Port Charlotte, Florida, and surrounding areas.",
+  },
+  {
+    question: "Do you handle hurricane cleanup?",
+    answer:
+      "Yes. Hurricane cleanup is one of Rowe All Around's listed services. Contact the team to discuss the outdoor cleanup your property needs.",
+  },
+  {
+    question: "Can I request multiple services at once?",
+    answer:
+      "Yes. Describe everything the property needs when you request an estimate so Rowe can discuss the overall scope with you.",
   },
   {
     question: "How do I request an estimate?",
     answer:
-      "Call, text, or email Elias with the property location, photos if available, and what you want to accomplish. He can discuss the project details with you directly.",
-  },
-  {
-    question: "What information should I send?",
-    answer:
-      "Include the property or project location, what needs to be cleared, any access details you know, and what you want the area ready for afterward.",
-  },
-  {
-    question: "Can I send photos of the property?",
-    answer:
-      "Yes. Photos can help explain the current conditions and the area you have in mind. Texting Elias is an easy way to start that conversation.",
-  },
-  {
-    question: "How far in advance should I contact you?",
-    answer:
-      "Availability can vary with the project and current schedule. Reach out as soon as you are considering the work so Elias can discuss timing with you directly.",
-  },
-  {
-    question: "Do you handle small and large clearing projects?",
-    answer:
-      "Project size, access, and site conditions all matter. Contact Elias with the details so he can review the scope rather than relying on a one-size-fits-all answer.",
-  },
-  {
-    question: "What affects the cost of land clearing?",
-    answer:
-      "Cost can depend on the amount and density of vegetation, site access, terrain, project size, and the desired finished condition. A project-specific conversation is the best way to understand pricing.",
+      "Call (941) 317-0509 or use the estimate form to share your contact information, the service you need, and details about the property.",
   },
 ] as const;

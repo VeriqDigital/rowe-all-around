@@ -5,12 +5,13 @@ import { faqs } from "@/data/faq";
 
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState(0);
+
   return (
     <div className="grid gap-10 lg:grid-cols-[0.7fr_1.3fr] lg:gap-20">
       <div>
         <p className="text-xs font-bold uppercase tracking-[0.24em] text-(--accent)">Questions before you call</p>
-        <h2 className="mt-4 font-heading text-5xl font-bold uppercase leading-[0.9] sm:text-6xl">Land clearing, plainly answered.</h2>
-        <p className="mt-6 max-w-md leading-7 text-(--muted)">The best answer depends on the property. These are useful starting points before you talk with Elias.</p>
+        <h2 className="mt-4 font-heading text-5xl font-bold uppercase leading-[0.9] sm:text-6xl">Property care, plainly answered.</h2>
+        <p className="mt-6 max-w-md leading-7 text-(--muted)">A few useful starting points before you talk with Rowe about your property.</p>
       </div>
       <div className="border-t border-(--border)">
         {faqs.map((item, index) => {

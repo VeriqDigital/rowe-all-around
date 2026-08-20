@@ -1,67 +1,64 @@
 import Image from "next/image";
 
+const gallery = [
+  {
+    src: "/761653616_122109579117368675_4877324292286820021_n.jpg",
+    alt: "Before and after view of a palm tree trimmed by Rowe All Around",
+    label: "Tree Trimming",
+    className: "md:col-span-8 md:row-span-2",
+    position: "center 50%",
+    sizes: "(max-width: 768px) 100vw, 66vw",
+  },
+  {
+    src: "/763805544_122109577683368675_6001752363088677010_n.jpg",
+    alt: "Before and after view of shaped trees and hedges",
+    label: "Tree & Vegetation Cleanup",
+    className: "md:col-span-4",
+    position: "center 50%",
+    sizes: "(max-width: 768px) 100vw, 33vw",
+  },
+  {
+    src: "/774895344_122111181963368675_6034236934525468951_n.jpg",
+    alt: "Maintained lawn and new palm landscaping beside a lake",
+    label: "Lawn Maintenance",
+    className: "md:col-span-4",
+    position: "center 57%",
+    sizes: "(max-width: 768px) 100vw, 33vw",
+  },
+  {
+    src: "/774502962_122111181939368675_4305344196960460336_n.jpg",
+    alt: "Rowe All Around team member working in a fresh mulch bed",
+    label: "Landscaping",
+    className: "md:col-span-5",
+    position: "center 46%",
+    sizes: "(max-width: 768px) 100vw, 42vw",
+  },
+  {
+    src: "/768951844_122110456299368675_3766914832586926871_n.jpg",
+    alt: "Lawn and property maintenance equipment at a work site",
+    label: "Property Cleanup",
+    className: "md:col-span-7",
+    position: "center 58%",
+    sizes: "(max-width: 768px) 100vw, 58vw",
+  },
+] as const;
+
 const WorkSection = () => (
   <div>
     <div className="grid gap-6 lg:grid-cols-[1fr_0.7fr] lg:items-end">
       <div>
-        <p className="text-xs font-bold uppercase tracking-[0.24em] text-[#9fd18c]">
-          Recent clearing work
-        </p>
-        <h2 className="mt-4 font-heading text-5xl font-bold uppercase leading-[0.88] tracking-[-0.03em] text-white sm:text-7xl">
-          The work speaks for itself.
-        </h2>
+        <p className="text-xs font-bold uppercase tracking-[0.24em] text-[#a9e466]">Around the property</p>
+        <h2 className="mt-4 font-heading text-5xl font-bold uppercase leading-[0.88] tracking-[-0.03em] text-white sm:text-7xl">The work speaks for itself.</h2>
       </div>
-      <p className="max-w-xl text-lg leading-8 text-white/65 lg:justify-self-end">
-        Actual Precision project photography—from overgrown conditions to open,
-        usable ground and the equipment that makes the transformation happen.
-      </p>
+      <p className="max-w-xl text-lg leading-8 text-white/65 lg:justify-self-end">Real Rowe All Around work—from lawn and landscape care to tree trimming and outdoor property cleanup.</p>
     </div>
     <div className="mt-12 grid auto-rows-[18rem] gap-3 sm:auto-rows-[22rem] md:grid-cols-12">
-      <figure className="group relative overflow-hidden md:col-span-8 md:row-span-2">
-        <Image
-          src="/644533361_122214584234565330_6554280238336667759_n.jpg"
-          alt="Precision land clearing machine on a cleared wooded property"
-          fill
-          className="object-cover object-[58%_60%] transition duration-700 group-hover:scale-[1.02]"
-          sizes="(max-width: 768px) 100vw, 66vw"
-        />
-      </figure>
-      <figure className="group relative overflow-hidden md:col-span-4">
-        <Image
-          src="/753503103_122234279858565330_1769672164975204912_n.jpg"
-          alt="View from land clearing equipment facing dense vegetation"
-          fill
-          className="object-cover object-[center_30%] transition duration-700 group-hover:scale-[1.02]"
-          sizes="(max-width: 768px) 100vw, 33vw"
-        />
-      </figure>
-      <figure className="group relative overflow-hidden md:col-span-4">
-        <Image
-          src="/738523346_122231588426565330_1895043176923264203_n.jpg"
-          alt="Cleared edge of a property after vegetation removal"
-          fill
-          className="object-cover object-[center_72%] transition duration-700 group-hover:scale-[1.02]"
-          sizes="(max-width: 768px) 100vw, 33vw"
-        />
-      </figure>
-      <figure className="group relative overflow-hidden md:col-span-5">
-        <Image
-          src="/770609169_122236434722565330_5168401742005820719_n.jpg"
-          alt="Aerial view of opened ground beneath a tree canopy"
-          fill
-          className="object-cover object-[center_65%] transition duration-700 group-hover:scale-[1.02]"
-          sizes="(max-width: 768px) 100vw, 42vw"
-        />
-      </figure>
-      <figure className="group relative overflow-hidden md:col-span-7">
-        <Image
-          src="/678380041_122222319836565330_9204077539104563223_n.jpg"
-          alt="Precision land clearing equipment arriving at a property"
-          fill
-          className="object-cover object-[center_64%] transition duration-700 group-hover:scale-[1.02]"
-          sizes="(max-width: 768px) 100vw, 58vw"
-        />
-      </figure>
+      {gallery.map((item) => (
+        <figure key={item.src} className={`group relative overflow-hidden bg-[#243024] ${item.className}`}>
+          <Image src={item.src} alt={item.alt} fill className="object-cover transition duration-700 group-hover:scale-[1.02]" style={{ objectPosition: item.position }} sizes={item.sizes} />
+          <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/85 to-transparent px-5 pb-5 pt-14 font-heading text-lg font-bold uppercase tracking-[0.06em] text-white">{item.label}</figcaption>
+        </figure>
+      ))}
     </div>
   </div>
 );

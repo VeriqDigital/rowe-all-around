@@ -9,16 +9,15 @@ const ServicesSection = ({ showAll = false }: ServicesSectionProps) => (
     <div className="grid gap-6 lg:grid-cols-[0.75fr_1.25fr] lg:items-end">
       <div>
         <p className="text-xs font-bold uppercase tracking-[0.24em] text-(--accent)">
-          What we clear
+          Lawn care &amp; property maintenance
         </p>
         <h2 className="mt-4 font-heading text-5xl font-bold uppercase leading-[0.9] tracking-[-0.03em] sm:text-6xl lg:text-7xl">
-          Make the land usable again.
+          One call. The whole property.
         </h2>
       </div>
       <p className="max-w-2xl text-lg leading-8 text-(--muted) lg:justify-self-end">
-        Every property starts with a different challenge. Precision focuses the
-        conversation on what is there now, what needs to be cleared, and what
-        you want the space ready for next.
+        Rowe handles recurring lawn care alongside larger landscaping, trimming,
+        storm cleanup, and property cleanup needs.
       </p>
     </div>
 
@@ -30,7 +29,7 @@ const ServicesSection = ({ showAll = false }: ServicesSectionProps) => (
             ? "xl:col-span-7"
             : index === 1
               ? "xl:col-span-5"
-              : "xl:col-span-3";
+              : "xl:col-span-4";
 
         return (
           <article
@@ -44,7 +43,7 @@ const ServicesSection = ({ showAll = false }: ServicesSectionProps) => (
             <div className="relative overflow-hidden bg-[#d9d8cf]">
               <Image
                 src={service.image}
-                alt={`${service.title} project by Precision Land Clearing`}
+                alt={service.alt}
                 fill
                 className="object-cover transition duration-700 group-hover:scale-[1.025]"
                 style={{ objectPosition: service.position }}

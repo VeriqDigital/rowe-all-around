@@ -1,44 +1,42 @@
 export const services = [
   {
-    title: "Land Clearing",
+    title: "Lawn Maintenance",
     description:
-      "Clear overgrown land so the property is easier to access, use, and prepare for what comes next.",
-    image: "/613795429_122206342154565330_2548263850512502953_n.jpg",
-    position: "center 72%",
+      "Routine lawn care that keeps residential and commercial properties looking clean and maintained.",
+    image: "/774895344_122111181963368675_6034236934525468951_n.jpg",
+    alt: "Maintained lawn and landscaping beside a Port Charlotte lake",
+    position: "center 58%",
   },
   {
-    title: "Brush Clearing",
+    title: "Landscaping",
     description:
-      "Address dense brush and unwanted growth while keeping the project scope focused on your goals for the property.",
-    image: "/753503103_122234279858565330_1769672164975204912_n.jpg",
-    position: "center 38%",
+      "General landscaping improvements and property appearance work shaped around your outdoor space.",
+    image: "/774502962_122111181939368675_4305344196960460336_n.jpg",
+    alt: "Rowe All Around team member improving a landscaped planting bed",
+    position: "center 48%",
   },
   {
-    title: "Lot Clearing",
+    title: "Tree Trimming",
     description:
-      "Open up wooded or overgrown lots and create a clearer starting point for the next phase of the property.",
-    image: "/770609169_122236434722565330_5168401742005820719_n.jpg",
-    position: "center 62%",
-  },
-  {
-    title: "Property Cleanup",
-    description:
-      "Discuss unwanted vegetation and site debris with Elias to define a practical cleanup plan for the property.",
-    image: "/641639088_122213699834565330_3996149708807636919_n.jpg",
-    position: "center 52%",
-  },
-  {
-    title: "Site Preparation",
-    description:
-      "Prepare an overgrown area for its next use by discussing the land, access, and desired finished condition.",
-    image: "/739420126_122231618246565330_7419188681757054350_n.jpg",
+      "Tree and vegetation trimming to keep properties cleaner, safer, and more manageable.",
+    image: "/761653616_122109579117368675_4877324292286820021_n.jpg",
+    alt: "Before and after view of a trimmed palm tree",
     position: "center 50%",
   },
   {
-    title: "Vegetation Removal",
+    title: "Hurricane Cleanups",
     description:
-      "Remove unwanted growth where a property needs better visibility, access, or a more usable footprint.",
-    image: "/738523346_122231588426565330_1895043176923264203_n.jpg",
-    position: "center 68%",
+      "Post-storm outdoor cleanup and debris removal to help get the property back in order.",
+    image: "/762623827_122109585987368675_6085780694112813397_n.jpg",
+    alt: "Rowe All Around hurricane cleanup service graphic",
+    position: "center 45%",
+  },
+  {
+    title: "Property Cleanups",
+    description:
+      "Cleanup for overgrown, neglected, or cluttered outdoor areas that need focused attention.",
+    image: "/768951844_122110456299368675_3766914832586926871_n.jpg",
+    alt: "Lawn and property maintenance equipment at a work site",
+    position: "center 55%",
   },
 ] as const;

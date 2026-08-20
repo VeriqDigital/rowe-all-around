@@ -4,7 +4,9 @@ export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
       userAgent: "*",
-      disallow: "/",
+      allow: "/",
     },
+    sitemap: "https://roweallaround.org/sitemap.xml",
+    host: "https://roweallaround.org",
   };
 }

@@ -26,16 +26,16 @@ const Navbar = () => {
       <div className="mx-auto flex h-18 w-full max-w-(--container-width) items-center gap-3 px-5 sm:h-20 sm:gap-5 sm:px-7 lg:px-10">
         <Link
           href="/"
-          aria-label="Precision Land Clearing home"
-          className="relative h-13 w-44 shrink-0 overflow-hidden bg-[#f5f4ee] sm:h-15 sm:w-52 lg:w-55"
+          aria-label="Rowe All Around home"
+          className="relative size-14 shrink-0 overflow-hidden rounded-full bg-white sm:size-16"
           onClick={() => setIsMenuOpen(false)}
         >
           <Image
-            src="/precision-logo-cropped.png"
-            alt="Precision Land Clearing"
+            src="/762542637_122109575775368675_8841562891983492712_n.jpg"
+            alt="Rowe All Around lawn care and property maintenance"
             fill
-            className="object-contain px-1.5 py-1"
-            sizes="(max-width: 640px) 176px, 220px"
+            className="object-cover"
+            sizes="64px"
           />
         </Link>
 
@@ -58,7 +58,7 @@ const Navbar = () => {
             href={siteConfig.contact.phoneHref}
             className="hidden text-right font-heading lg:block"
           >
-            <span className="block text-[0.65rem] font-bold uppercase tracking-[0.18em] text-white/55">Call Elias</span>
+            <span className="block text-[0.65rem] font-bold uppercase tracking-[0.18em] text-white/55">Call Rowe</span>
             <span className="text-base font-bold">{siteConfig.contact.phone}</span>
           </a>
           <Button onClick={() => modal.openModal(primaryCta.modal)}>
@@ -69,7 +69,7 @@ const Navbar = () => {
         <a
           href={siteConfig.contact.phoneHref}
           className="ml-auto flex size-11 items-center justify-center border border-white/35 text-sm font-bold uppercase md:hidden"
-          aria-label={`Call Precision Land Clearing at ${siteConfig.contact.phone}`}
+          aria-label={`Call Rowe All Around at ${siteConfig.contact.phone}`}
         >
           Call
         </a>
@@ -99,7 +99,7 @@ const Navbar = () => {
                 </Link>
               ) : null,
             )}
-            <a href={siteConfig.contact.smsHref} className="border-b border-white/10 py-3 font-heading font-bold uppercase tracking-[0.06em] text-[#8fc37a]">Text Elias</a>
+            <a href={siteConfig.contact.phoneHref} className="border-b border-white/10 py-3 font-heading font-bold uppercase tracking-[0.06em] text-[#9ee45f]">Call {siteConfig.contact.phone}</a>
             <button type="button" onClick={() => { setIsMenuOpen(false); modal.openModal(primaryCta.modal); }} className="mt-4 min-h-12 bg-(--accent) px-5 py-3 text-left font-heading font-bold uppercase tracking-[0.06em] text-white sm:col-span-2">
               Get a Free Estimate
             </button>
